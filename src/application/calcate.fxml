@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Maincontrolar">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="5.0" layoutY="19.0" prefHeight="100" prefWidth="100">
+         <children>
+            <TextField fx:id="no1" layoutX="119.0" layoutY="132.0" prefHeight="13.0" prefWidth="176.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="no2" layoutX="119.0" layoutY="179.0" prefHeight="16.0" prefWidth="176.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <RadioButton fx:id="MUL" contentDisplay="RIGHT" layoutX="298.0" layoutY="243.0" mnemonicParsing="false" onAction="#onClickCheckBox" text="*" textFill="#fffffff5">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="EN" alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="295.0" layoutY="107.0" mnemonicParsing="false" onAction="#onClickCheckBox" text="+" textFill="#f8f8f8" toggleGroup="$g1">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="DIV" contentDisplay="RIGHT" layoutX="298.0" layoutY="202.0" mnemonicParsing="false" onAction="#onClickCheckBox" text="/" textFill="#f5f5f5" toggleGroup="$g1">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="DE" contentDisplay="BOTTOM" layoutX="298.0" layoutY="155.0" mnemonicParsing="false" onAction="#onClickCheckBox" text="-" textFill="WHITE" toggleGroup="$g1">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="res" layoutX="119.0" layoutY="228.0" prefHeight="13.0" prefWidth="176.0" promptText="Result">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="32.0" layoutY="133.0" text="NO- One" textFill="#c6bebe">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="180.0" text="NO-Tow" textFill="#ddd4d4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="234.0" text="Result" textFill="#e1dddd">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
